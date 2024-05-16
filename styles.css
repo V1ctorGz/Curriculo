@@ -1,9 +1,23 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
@@ -11,23 +25,25 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 header h1 {
+  font-size: 36px;
   margin: 0;
 }
 
 section {
   padding: 20px;
-  margin: 10px;
+  margin-bottom: 20px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
   border-bottom: 2px solid #333;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 ul {
@@ -47,3 +63,26 @@ ul li {
 #contact a:hover {
   text-decoration: underline;
 }
+
+/* Botão */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+}
+
