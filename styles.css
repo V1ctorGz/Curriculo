@@ -1,17 +1,10 @@
-/* Reset de Estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Estilos Gerais */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #bfbfbf;
 }
 
 .container {
@@ -24,13 +17,28 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
-  text-align: center;
   margin-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-left: 20px;  /* Adiciona espaçamento à esquerda para o nome */
+  padding-right: 20px; /* Adiciona espaçamento à direita para os botões */
 }
 
 header h1 {
   font-size: 36px;
   margin: 0;
+}
+
+.header-buttons {
+  justify-content: flex-end;
+  display: flex;
+  gap: 30px;
 }
 
 section {
@@ -55,8 +63,39 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* Estilos para a seção de Habilidades */
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.skill i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+/* Estilos para a seção de Contato */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 #contact a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -68,7 +107,6 @@ ul li {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -76,13 +114,35 @@ ul li {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: black;
+}
+
+/* Layout lado a lado */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 300px; /* Define um tamanho mínimo para melhor responsividade */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .container {
       padding: 10px;
+  }
+  .flex-container {
+      flex-direction: column;
+  }
+  .header-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .header-buttons {
+      margin-top: 10px;
   }
 }
 
