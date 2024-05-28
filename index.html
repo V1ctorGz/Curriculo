@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <!-- Container: Victor Gomes + botões -->
     <header>
-        <div class="header-content">
+        <div class="header-content container">
+            <img src="https://c4.wallpaperflare.com/wallpaper/805/742/532/warcraft-world-of-warcraft-demon-illidan-stormrage-night-elf-hd-wallpaper-preview.jpg" alt="Foto de Victor Gomes" class="profile-photo">
             <h1>Victor Gomes</h1>
             <div class="header-buttons">
                 <a href="index.html" class="btn">HOME</a>
@@ -20,66 +23,111 @@
         </div>
     </header>
 
-    <section id="about">
+
+    <!-- Nova Seção de Introdução -->
+    <section id="intro" class="intro-section">
+        <div class="intro-content">
+            <h1>Olá, me chamo Victor</h1>
+            <p>Sou um desenvolvedor backend apaixonado por tecnologia e sempre em busca de novos desafios.</p>
+        </div>
+        <a href="#projects" class="btn btn-projects">Projetos</a>
+    </section>
+
+
+    <!-- Container: Sobre Mim -->
+    <section id="about" class="container">
         <h2>Sobre Mim</h2>
         <p>Estudante de TI com experiência sólida em setores administrativos. Orientado para o aprendizado contínuo, dedicado e focado no aprimoramento de  
             habilidades tecnológicas.
         </p>
     </section>
 
-    <div class="flex-container">
-        <section id="experience" class="flex-item">
-            <h2>Experiência</h2>
-            <ul>
-                <li>
-                    <h3>Gelo Urso polar</h3>
-                    <p>Auxiliar Administrativa - Dezembro 2023 - Atualmente</p>
-                    <p>Descrição das suas responsabilidades e conquistas.</p>
-                </li>
-                <li>
-                    <h3>Advocacia Bellinati Perez</h3>
-                    <p>Auxiliar Administrativo - Fevereiro 2023 - Agosto 2023</p>
-                    <p>Descrição das suas responsabilidades e conquistas.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="education" class="flex-item">
-            <h2>Educação</h2>
-            <ul>
-                <li>
-                    <h3>Cruzeiro do sul</h3>
-                    <p>Análise e desenvolvimento de sistemas - Agosto 2023 - Agosto 2025</p>
-                </li>
-                <li>
-                    <h3>Dev superior</h3>
-                    <p>Formação em c# - Concluído</p>
-                </li>
-            </ul>
-        </section>
-    </div>
-
+    
+    <!-- Container: Habilidades -->
     <section id="skills">
-        <h2>Habilidades</h2>
+        <div class="skills-content">
+            <div class="text-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
+            </div>
+            <div class="skills-list">
+                <ul>
+                    <li class="skill"><i class="fas fa-code"></i><span class="skill-name">Desenvolvimento em C#</span></li>
+                    <li class="skill"><i class="fab fa-dotnet"></i><span class="skill-name">ASP.NET</span></li>
+                    <li class="skill"><i class="fab fa-git"></i><span class="skill-name">Versionamento Git</span></li>
+                    <li class="skill"><i class="fas fa-database"></i><span class="skill-name">SQL - PostgreSQL</span></li>
+                    <li class="skill"><i class="fab fa-microsoft"></i><span class="skill-name">.NET Core</span></li>
+                    <li class="skill"><i class="fas fa-code"></i><span class="skill-name">Rest API</span></li>
+                    <li class="skill"><i class="fas fa-cloud"></i><span class="skill-name">Cloud - Azure</span></li>
+                    <li class="skill"><i class="far fa-address-card"></i><span class="skill-name">Experiência Administrativa</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container: Projetos -->
+<section id="projects" class="container">
+    <h2>Projetos</h2>
+    <p>Descrição dos projetos desenvolvidos...</p>
+    <!-- Adicione aqui a lista ou descrição dos seus projetos -->
+</section>
+
+
+   <!-- Container: Experiência e Educação -->
+   <div class="container flex-container">
+    <section id="experience" class="flex-item">
+        <h2>Experiência</h2>
         <ul>
-            <li class="skill"><i class="fas fa-code"></i><span class="skill-name">Desenvolvimento em C#</span></li>
-            <li class="skill"><i class="fab fa-dotnet"></i><span class="skill-name">ASP.NET</span></li>
-            <li class="skill"><i class="fab fa-git"></i><span class="skill-name">Versionamento Git</span></li>
-            <li class="skill"><i class="fas fa-database"></i><span class="skill-name">SQL - PostgreSQL</span></li>
-            <li class="skill"><i class="fab fa-microsoft"></i><span class="skill-name">.NET Core</span></li>
-            <li class="skill"><i class="fas fa-code"></i><span class="skill-name">Rest API</span></li>
-            <li class="skill"><i class="fas fa-cloud"></i><span class="skill-name">Cloud - Azure</span></li>
-            <li class="skill"><i class="far fa-address-card"></i><span class="skill-name">Experiência Administrativa</span></li>
+            <li>
+                <h3>Gelo Urso Polar</h3>
+                <p>Auxiliar Administrativa - Dezembro 2023 - Atualmente</p>
+                <p>Descrição das suas responsabilidades e conquistas.</p>
+            </li>
+            <li>
+                <h3>Advocacia Bellinati Perez</h3>
+                <p>Auxiliar Administrativo - Fevereiro 2023 - Agosto 2023</p>
+                <p>Descrição das suas responsabilidades e conquistas.</p>
+            </li>
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="education" class="flex-item">
+        <h2>Educação</h2>
+        <ul>
+            <li>
+                <h3>Cruzeiro do Sul</h3>
+                <p>Análise e Desenvolvimento de Sistemas - Agosto 2023 - Agosto 2025</p>
+            </li>
+            <li>
+                <h3>Dev Superior</h3>
+                <p>Formação em C# - Concluído</p>
+            </li>
+        </ul>
+    </section>
+</div>
+
+    <!-- Container: Contatos -->
+    <section id="contact" class="container">
         <h2>Contato</h2>
-        <p>Email: <a href="v.gomez@outlook.com.br">v.gomez@outlook.com.br</a></p>
-        <p>GitHub: <a href="https://github.com/V1ctorGz">V1ctorGz</a></p>
+        <p>Email: <a href="mailto:v.gomez@outlook.com.br">v.gomez@outlook.com.br</a></p>
+        <p>GitHub: <a href="https://github.com/V1ctorGz" target="_blank">V1ctorGz</a></p>
         <p>Telefone: (41) 99198-6243</p>
     </section>
 
     <script src="script.js"></script>
+
+    <section class="additional-section">
+        <div>
+          <h2>Meu Nome</h2>
+          <p>Texto aleatório.</p>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+          <p>Telefone: (XX) XXXX-XXXX</p>
+        </div>
+      </section>
+
+
 </body>
-</html>
+
+</html
