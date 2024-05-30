@@ -142,7 +142,7 @@ header h1 {
   background-color: #fff;
   font-size: 48px; /* Tamanho grande de fonte */
   text-align: center; /* Alinhamento ao centro */
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte Comic Sans */
+  font-family: 'Open Sans MS', cursive, open-sans; /* Fonte Comic Sans */
   margin-bottom: 0px; /* Espaço abaixo do título */
 }
 
@@ -159,7 +159,7 @@ header h1 {
 /* Texto da seção "Sobre Mim" */
 .text-content {
   flex: 1;
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte Comic Sans */
+  font-family: 'Open sans MS', cursive, open-sans; /* Fonte Comic Sans */
   text-align: left; /* Alinhamento à esquerda */
   margin-right: 20px; /* Espaço à direita */
 }
@@ -167,7 +167,7 @@ header h1 {
 /* Lista de habilidades */
 .skills-list {
   flex: 1;
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte Comic Sans */
+  font-family: 'Open sans MS', cursive, open-sans; /* Fonte Comic Sans */
 }
 
 .skills-list ul {
