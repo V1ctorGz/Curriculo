@@ -238,7 +238,7 @@ header h1 {
   background-color: #000; /* Usando o cinza sugerido */
   color: #fff;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 20px; 
   width: 100%;
   box-sizing: border-box; /* Inclui o padding e a border no tamanho total do elemento */
 }
@@ -269,6 +269,13 @@ header h1 {
   text-decoration: underline;
 }
 
+.icons {
+  width: 30px; /* Tamanho dos ícones */
+  height: 30px; /* Tamanho dos ícones */
+  margin: 0 10px; /* Espaçamento entre os ícones */
+  vertical-align: middle; /* Alinhamento vertical dos ícones */
+  border: 1px solid #fff;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
