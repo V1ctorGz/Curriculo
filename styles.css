@@ -139,9 +139,9 @@ header h1 {
 /* Estilo para o título "Sobre Mim" */
 #about h2 {
   background-color: #fff;
-  font-size: 48px; /* Tamanho grande de fonte */
+  font-size: 38px; /* Tamanho grande de fonte */
   text-align: center; /* Alinhamento ao centro */
-  font-family: 'Open Sans MS', cursive, open-sans; /* Fonte Comic Sans */
+  font-family:  Arial, sans-serif;
   margin-bottom: 0px; /* Espaço abaixo do título */
 }
 
@@ -159,7 +159,7 @@ header h1 {
 .text-content {
   flex: 1;
   font-size: 20px;
-  font-family: 'Open sans MS', cursive, open-sans; /* Fonte Comic Sans */
+  font-family:  Arial, sans-serif;
   text-align: left; /* Alinhamento à esquerda */
   margin-right: 30px; /* Espaço à direita */
 }
@@ -167,7 +167,7 @@ header h1 {
 /* Lista de habilidades */
 .skills-list {
   flex: 1;
-  font-family: 'Open sans MS', cursive, open-sans; /* Fonte Comic Sans */
+  font-family:  Arial, sans-serif;
   font-size: 20px;
   flex-wrap: wrap;
 }
@@ -238,6 +238,61 @@ header h1 {
   background-color: #0056b3;
 }
 
+
+/* Container Flexível */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaço entre os itens */
+  justify-content: space-between;
+}
+
+/* Itens Flexíveis */
+.flex-item {
+  flex: 1;
+  min-width: 300px; /* Largura mínima para garantir boa responsividade */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+/* Seções de Experiência e Educação */
+#experience, #education {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Títulos das Seções */
+#experience h2, #education h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Lista de Experiência e Educação */
+#experience ul, #education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#experience li, #education li {
+  margin-bottom: 20px;
+}
+
+/* Títulos das Experiências e Educação */
+#experience h3, #education h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #000; /* Cor lilás para destaque */
+}
+
+/* Parágrafos de Descrição */
+#experience p, #education p {
+  margin: 5px 0;
+  color: #666;
+}
+
 .additional-section {
   display: flex;
   justify-content: space-between;
@@ -256,13 +311,13 @@ header h1 {
 }
 
 .additional-section h2 {
-  font-size: 40px; /* Ajuste do tamanho da fonte */
+  font-size: 30px; /* Ajuste do tamanho da fonte */
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .additional-section p {
-  font-size: 20px; /* Ajuste do tamanho da fonte */
+  font-size: 17px; /* Ajuste do tamanho da fonte */
   margin-bottom: 10px;
 }
 
@@ -281,6 +336,7 @@ header h1 {
   height: 50px; /* Tamanho dos ícones */
   margin: 0 10px; /* Espaçamento entre os ícones */
   vertical-align: middle; /* Alinhamento vertical dos ícones */
+  border-radius: 10px;
   border: 1px solid #fff;
 }
 
@@ -301,6 +357,18 @@ header h1 {
     
   }
 }
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .flex-item {
+    margin-bottom: 20px;
+  }
+}
+
 
 @media (max-width: 480px) {
   header h1 {
